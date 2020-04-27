@@ -1,0 +1,37 @@
+1. What programming languages you can use for Android app development?
+
+Java, kotlin and C++
+
+2. What is .apk file?
+
+.apk file is a file where the is all the information of the created Android app.
+
+3. How Android system runs apps?
+
+Every app is a different user, has its own ID, and its own authorisations.
+Each process has its own virtual machine, the systeme run them as long as 
+it is necessary. It can choose to prioritize some process over the other.
+
+4. Name four types of Android components. Describe each.
+
+Services
+A service in Android is a background process. Services are typically used for processes that are ongoing or that take a significant period of time. A service doesn't have a user interface, so they are often combined with other components such as activities.
+
+Content Providers
+A content provider is a component for managing a data set. This data set can be private to your application or can be shared, with other apps able to query and modify the data. If you create a content provider to manage data for your own app, your UI components such as activities will use the content provider, typically through the content resolver class to interact with the data. 
+
+Broadcast Receivers
+The Android system makes various types of broadcasts an app can respond to. You can also develop apps to make these broadcasts, but this is far less likely than to listen for existing broadcasts, at least for your first apps.
+
+Other Classes
+As we've seen, the Android components are designed to provide interaction between apps. Just as broadcast announcements are available to any app on the system, Android provides certain actions you can use to carry out common tasks in your apps, such as dialing a number.
+
+5. What is manifest file and what is its purpose?
+
+The manifest file is required to declare the app's package name, the components of the app, the permissions and the hardware/software.
+Every app project must have an AndroidManifest.xml file (with precisely that name) at the root of the project source set. The manifest file describes essential information about your app to the Android build tools, the Android operating system, and Google Play.
+
+6. What are resources? Why they are needed?
+
+They are data that you have to put outside of your core code.
+Resources are used for anything from defining colors, images, layouts, menus, and string values. The value of this is that nothing is hardcoded.
